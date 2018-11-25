@@ -2,8 +2,9 @@
 title: Testing static man 
 excerpt: Testing static man
 ---
+
 {% for comment in site.data.comments.testing-static-man %}
-	<h1> "{{comment.name }}" </h1>
+	<h1> Hello ! "{{comment.message }}" </h1>
 {% endfor %}
 <form method="POST" action="https://api.staticman.net/v2/entry/prashant2400/prashant2400.github.io/master/comments">
 	<input name="options[redirect]" type="hidden" value="https://prashant2400.github.io">
